@@ -17,8 +17,6 @@ set(JAVA_SOURCE_PROJECT ${PROJECT_SOURCE_DIR}/../zx-orbis/math)
 set(JAVA_CLASSPATH ${JAVA_SOURCE_PROJECT}/src/main/java)
 file(GLOB JAVA_SOURCE ${JAVA_CLASSPATH}/ch/szclsb/orbis/math/jni/*.java)
 
-message(${JAVA_SOURCE})
-
 add_custom_target(${JAVAH}
         COMMAND javac -classpath ${JAVA_CLASSPATH} -h ${PROJECT_SOURCE_DIR}/header ${JAVA_SOURCE} -d ${CMAKE_STUB_DIR}
         )
