@@ -10,8 +10,6 @@ if (NOT JNI_FOUND)
     message(FATAL_ERROR "JNI not found")
 endif()
 
-message(javac -classpath ${JAVA_CLASSPATH} -h ${PROJECT_SOURCE_DIR}/header ${JAVA_SOURCE_DIR} -d ${CMAKE_STUB_DIR})
-
 # generate jni header files command target
 set(JAVAH orbis_generate_header)
 set(CMAKE_STUB_DIR ${PROJECT_SOURCE_DIR}/stub)
