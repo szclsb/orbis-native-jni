@@ -4,7 +4,4 @@ project(orbis)
 set(CMAKE_CXX_STANDARD 20)
 
 add_subdirectory(glfw)
-
-set(SOURCE_FILES
-        main.cpp)
-add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+add_subdirectory(orbis)
